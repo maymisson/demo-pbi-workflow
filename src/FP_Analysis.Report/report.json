@@ -15,6 +15,11 @@
             "name": "CY24SU10",
             "path": "BaseThemes/CY24SU10.json",
             "type": 202
+          },
+          {
+            "name": "Innovate",
+            "path": "BuiltInThemes/Innovate.json",
+            "type": 201
           }
         ],
         "name": "SharedResources",
