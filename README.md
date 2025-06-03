@@ -5,13 +5,6 @@
 Este repositório é um exemplo de como trabalhar em colaboração com projetos Power BI usando Git e GitHub Workflow, resolvendo conflitos e construindo um projeto paralelo de exemplo.  
 Ele demonstra o uso de um cenário de CI/CD para projetos Microsoft Power BI PRO utilizando [fabric-cli](https://aka.ms/fabric-cli) e GitHub Actions.  
 
-
-## Links Rápidos  
-- Vídeo de demonstração deste repositório: https://youtu.be/sgVqrOUgXro  
-- Como obter o Service Principal: https://youtu.be/IFp1Aingnmw  
-- Aprenda Git e GitHub para MS Fabric e Power BI: https://youtu.be/wFimCGpndOc  
-
-
 ## Instalação  
 
 - Faça um fork deste repositório  
