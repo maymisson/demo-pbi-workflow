@@ -3,7 +3,7 @@
         "spnSecret": "DEV",
         "capacity": "none",
         "workspace": "FP_Analysis_DEV",
-        "adminUPNs": "b3fbad1f-1dd1-4613-9420-ac59dd488335",
+        "adminUPNs": "33bb9316-11d3-4a96-a4e3-12ceaba053ea",
         "semanticModelsParameters": {
             "SqlServerInstance": "",
             "SqlServerDatabase": ""
@@ -13,7 +13,7 @@
         "spnSecret": "PRD",
         "capacity": "none",
         "workspace": "FP_Analysis_PRD",
-        "adminUPNs": "b3fbad1f-1dd1-4613-9420-ac59dd488335",
+        "adminUPNs": "33bb9316-11d3-4a96-a4e3-12ceaba053ea",
         "semanticModelsParameters": {
             "SqlServerInstance": "",
             "SqlServerDatabase": ""
