@@ -47,7 +47,8 @@ jobs:
 
       - name: Run Deployment Script        
         env:
+          WORKSPACE_NAME: ${{ secrets.WORKSPACE_NAME }}
           FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
           FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
           FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}          
-        run: python scripts/deploy.py --spn-auth --environment ${{ env.environment }}
+        run: python scripts/deploy_all.py
