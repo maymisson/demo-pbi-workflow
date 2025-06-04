@@ -1,2 +1,4 @@
-ms-fabric-cli 
+azure_storage
+fabric_cicd
 python-dotenv
+ms-fabric-cli
