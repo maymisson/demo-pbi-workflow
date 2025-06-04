@@ -13,7 +13,6 @@ workspace_id = os.getenv("FABRIC_WORKSPACE_ID")
 
 print(f"Worspace ID: {workspace_id}")
 
-# workspace_id = "81d945d2-a268-431b-a614-1be6911f4fa7"
 repository_directory = "C:/workspace/Labs/demo-pbi-workflow/src/"
 item_type_in_scope = ["SemanticModel", "Report"]
 
@@ -26,9 +25,6 @@ print(f"Client ID: {client_id}")
 print(f"Client Secret: {client_secret}")
 print(f"Tenant ID: {tenant_id}")
 
-# client_id = "335db6b4-24e7-4533-aa73-6cc740d36404"
-# client_secret = "Meu8Q~qIPzyaEzTkKW7PYR.LKLCgYBWDI72ONdbj"
-# tenant_id = "852dfdbb-be73-4699-8c7e-23895b6f9d26"
 token_credential = ClientSecretCredential(client_id=client_id, client_secret=client_secret, tenant_id=tenant_id)
 
 # Initialize the FabricWorkspace object with the required parameters
