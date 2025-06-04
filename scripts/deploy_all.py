@@ -1,6 +1,7 @@
 import os
 import glob
 import subprocess
+import argparse
 
 def fab_authenticate_spn(client_id, client_secret, tenant_id):
     """
@@ -54,15 +55,18 @@ def deploy_all(src_folder, workspace_name, client_id, client_secret, tenant_id):
             deploy_item(file_path, workspace_name)
 
 if __name__ == "__main__":
-    # Configuration
-    SRC_FOLDER = "src"
-    BASE_WORKSPACE_NAME = os.getenv("WORKSPACE_NAME")  # Variable from GitHub Actions
-    BRANCH_NAME = os.getenv("GITHUB_REF_NAME")  # GitHub Actions branch name
+    # Argument parser
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("--spn-auth", action="store_true", help="Enable SPN authentication")
+    parser.add_argument("--environment", required=True, help="Target environment (e.g., 'develop', 'main')")
+    parser.add_argument("--workspace-name", required=True, help="Base workspace name")
+    parser.add_argument("--src-folder", default="src", help="Source folder containing Power BI items")
+    args = parser.parse_args()
 
-    if not BASE_WORKSPACE_NAME:
-        raise Exception("WORKSPACE_NAME is not set in environment variables.")
-    if not BRANCH_NAME:
-        raise Exception("GITHUB_REF_NAME is not set in environment variables.")
+    # Deployment parameters
+    BASE_WORKSPACE_NAME = args.workspace_name
+    BRANCH_NAME = args.environment
+    SRC_FOLDER = args.src_folder
 
     # Determine workspace name based on branch
     if BRANCH_NAME == "develop":
