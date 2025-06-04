@@ -1,4 +1,4 @@
-azure_storage
+azure-identity
 fabric_cicd
 python-dotenv
-ms-fabric-cli
+# ms-fabric-cli
