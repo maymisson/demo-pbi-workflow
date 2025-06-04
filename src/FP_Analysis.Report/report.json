@@ -7,6 +7,11 @@
         "disabled": false,
         "items": [
           {
+            "name": "AccessibleTidal",
+            "path": "BuiltInThemes/AccessibleTidal.json",
+            "type": 201
+          },
+          {
             "name": "CY24SU10",
             "path": "BaseThemes/CY24SU10.json",
             "type": 202
