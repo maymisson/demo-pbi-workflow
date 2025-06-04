@@ -25,7 +25,7 @@ item_type_in_scope = [
                       "SemanticModel", 
                       "Report", 
                       "DataPipeline", 
-                      "Enviroment", 
+                      "Environment", 
                       "Notebook", 
                       "Lakehouse", 
                       "MirroredDatabase", 
