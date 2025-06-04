@@ -62,15 +62,6 @@
           "x": 704.04,
           "y": 84.24,
           "z": 1001.00
-        },
-        {
-          "config": "{\"name\":\"e7edcec39afd1a450fd4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":192.5653540949244,\"y\":84.63063332834257,\"z\":0,\"width\":482.026650696212,\"height\":532.3144183260968,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"MyMeasures.Actuals\"}],\"Rows\":[{\"queryRef\":\"DimAccountGroup.AccountGroup\",\"active\":true},{\"queryRef\":\"DimAccount.AccountSubgroup\",\"active\":true},{\"queryRef\":\"DimAccount.ControlAccount\",\"active\":true},{\"queryRef\":\"DimAccount.SubsidiaryAccount\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MyMeasures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimAccountGroup\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"DimAccount\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Actuals\"},\"Name\":\"MyMeasures.Actuals\",\"NativeReferenceName\":\"Actuals\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"AccountGroup\"},\"Name\":\"DimAccountGroup.AccountGroup\",\"NativeReferenceName\":\"AccountGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"AccountSubgroup\"},\"Name\":\"DimAccount.AccountSubgroup\",\"NativeReferenceName\":\"AccountSubgroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"ControlAccount\"},\"Name\":\"DimAccount.ControlAccount\",\"NativeReferenceName\":\"ControlAccount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"SubsidiaryAccount\"},\"Name\":\"DimAccount.SubsidiaryAccount\",\"NativeReferenceName\":\"SubsidiaryAccount\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"DimAccountGroup.AccountGroup\"],\"isPinned\":true},{\"queryRefs\":[\"DimAccount.AccountSubgroup\"],\"isPinned\":true},{\"queryRefs\":[\"DimAccount.ControlAccount\"],\"isPinned\":true},{\"queryRefs\":[\"DimAccount.SubsidiaryAccount\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"perRowLevel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"levelSubtotalEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"DimAccountGroup.AccountGroup\"}}]}}}",
-          "filters": "[]",
-          "height": 532.31,
-          "width": 482.03,
-          "x": 192.57,
-          "y": 84.63,
-          "z": 0.00
         }
       ],
       "width": 1280.00
