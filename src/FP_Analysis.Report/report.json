@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleTidal\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -7,9 +7,19 @@
         "disabled": false,
         "items": [
           {
+            "name": "AccessibleTidal",
+            "path": "BuiltInThemes/AccessibleTidal.json",
+            "type": 201
+          },
+          {
             "name": "CY24SU10",
             "path": "BaseThemes/CY24SU10.json",
             "type": 202
+          },
+          {
+            "name": "Innovate",
+            "path": "BuiltInThemes/Innovate.json",
+            "type": 201
           }
         ],
         "name": "SharedResources",
@@ -20,13 +30,33 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "Page 1",
+      "displayName": "FP_A",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "c05cb36ed44d5b0b0956",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"52970992e1ac1f965a67\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.51429854768678,\"y\":84.63063332834257,\"z\":1,\"width\":141.0510555472376,\"height\":532.3144183260968}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimDate.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"},\"Name\":\"DimDate.Year\",\"NativeReferenceName\":\"Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 532.31,
+          "width": 141.05,
+          "x": 51.51,
+          "y": 84.63,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"e7edcec39afd1a450fd4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":192.5653540949244,\"y\":84.63063332834257,\"z\":0,\"width\":482.026650696212,\"height\":532.3144183260968,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"MyMeasures.Actuals\"}],\"Rows\":[{\"queryRef\":\"DimAccountGroup.AccountGroup\",\"active\":true},{\"queryRef\":\"DimAccount.AccountSubgroup\",\"active\":true},{\"queryRef\":\"DimAccount.ControlAccount\",\"active\":true},{\"queryRef\":\"DimAccount.SubsidiaryAccount\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MyMeasures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimAccountGroup\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"DimAccount\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Actuals\"},\"Name\":\"MyMeasures.Actuals\",\"NativeReferenceName\":\"Actuals\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"AccountGroup\"},\"Name\":\"DimAccountGroup.AccountGroup\",\"NativeReferenceName\":\"AccountGroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"AccountSubgroup\"},\"Name\":\"DimAccount.AccountSubgroup\",\"NativeReferenceName\":\"AccountSubgroup\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"ControlAccount\"},\"Name\":\"DimAccount.ControlAccount\",\"NativeReferenceName\":\"ControlAccount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"SubsidiaryAccount\"},\"Name\":\"DimAccount.SubsidiaryAccount\",\"NativeReferenceName\":\"SubsidiaryAccount\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"DimAccountGroup.AccountGroup\"],\"isPinned\":true},{\"queryRefs\":[\"DimAccount.AccountSubgroup\"],\"isPinned\":true},{\"queryRefs\":[\"DimAccount.ControlAccount\"],\"isPinned\":true},{\"queryRefs\":[\"DimAccount.SubsidiaryAccount\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"perRowLevel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"levelSubtotalEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"DimAccountGroup.AccountGroup\"}}]}}}",
+          "filters": "[]",
+          "height": 532.31,
+          "width": 482.03,
+          "x": 192.57,
+          "y": 84.63,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     }
-  ]
+  ],
+  "theme": "AccessibleTidal"
 }
