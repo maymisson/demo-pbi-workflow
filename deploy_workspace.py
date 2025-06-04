@@ -10,10 +10,11 @@ root_directory = Path(__file__).resolve().parent
 
 # Sample values for FabricWorkspace parameters
 workspace_id = os.getenv("FABRIC_WORKSPACE_ID")
-
 print(f"Worspace ID: {workspace_id}")
 
-repository_directory = "C:/workspace/Labs/demo-pbi-workflow/src/"
+# repository_directory = "C:/workspace/Labs/demo-pbi-workflow/src/"
+repository_directory = os.path.join(os.getenv("GITHUB_WORKSPACE", "."), "src")
+print(f"Repository Directory: {repository_directory}")
 item_type_in_scope = ["SemanticModel", "Report"]
 
 # Use Azure CLI credential to authenticate
