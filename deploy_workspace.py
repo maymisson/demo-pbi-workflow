@@ -7,17 +7,10 @@ root_directory = Path(__file__).resolve().parent
 
 # Parameters for the FabricWorkspace Connection
 workspace_id = os.getenv("FABRIC_WORKSPACE_ID")
-
 repository_directory = os.path.join(os.getenv("GITHUB_WORKSPACE", "."), "src")
-
 client_id = os.getenv("FABRIC_CLIENT_ID")
 client_secret = os.getenv("FABRIC_CLIENT_SECRET")
 tenant_id = os.getenv("FABRIC_TENANT_ID")
-
-print(f"Client ID: {client_id}")
-print(f"Client Secret: {client_secret}")
-print(f"Tenant ID: {tenant_id}")
-
 token_credential = ClientSecretCredential(client_id=client_id, client_secret=client_secret, tenant_id=tenant_id)
 
 # Supported Item Types fabric-cicd
