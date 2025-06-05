@@ -25,7 +25,7 @@ env:
 jobs:
   deploy:    
     runs-on: ubuntu-latest
-
+    environment: ${{ github.ref == 'refs/heads/main' && 'PRD' || 'DEV' }}
     steps:
       - name: Check out the code 🔍
         uses: actions/checkout@v4
